@@ -1,0 +1,18 @@
+# DATASOURCE
+jdbc:
+    dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    url: jdbc:mysql://127.0.0.1:3306/student?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    databaseName: student
+    serverName: 127.0.0.1
+    username: root
+    password: 123456
+    cachePrepStmts: true
+    prepStmtsSize: 250
+    prepStmtsCacheSqlLimit: 2048
+    userServerPrepStmts: true
+
+ # MyBatis
+mybatis:
+        typeAliasesPackage: com.example.api.*.dao
+        mapperLocations: classpath:/mappers/*.xml
+        configLocation: classpath:/mybatis-config.xml
