@@ -30,6 +30,7 @@
 		<mysql-connector-java.version>5.1.34</mysql-connector-java.version>
 		<!-- mybatis pagehelper -->
 		<pagehelper.version>3.6.3</pagehelper.version>
+
 	</properties>
 
 	<dependencies>
@@ -101,6 +102,19 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
+		</dependency>
+		<!-- 阿里云短信服务 -->
+		<dependency>
+			<groupId>com.aliyun</groupId>
+			<artifactId>aliyun-java-sdk-core</artifactId>
+			<version>4.1.0</version>
+		</dependency>
+		<!--lombok Plugin-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.4</version>
+			<scope>provided</scope>
 		</dependency>
 
 	</dependencies>

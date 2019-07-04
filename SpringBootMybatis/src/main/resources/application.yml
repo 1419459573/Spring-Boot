@@ -1,3 +1,7 @@
+# 开发环境配置
+server:
+    # 服务端口
+    port: 8888
 # DATASOURCE
 jdbc:
     dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
@@ -5,7 +9,7 @@ jdbc:
     databaseName: student
     serverName: 127.0.0.1
     username: root
-    password: 123456
+    password: rootadmin
     cachePrepStmts: true
     prepStmtsSize: 250
     prepStmtsCacheSqlLimit: 2048
@@ -16,3 +20,14 @@ mybatis:
         typeAliasesPackage: com.example.api.*.dao
         mapperLocations: classpath:/mappers/*.xml
         configLocation: classpath:/mybatis-config.xml
+
+#阿里云短信服务
+msg:
+    accessKeyId: LTAI6ygkWr76Zvgm
+    accessKeySecret: RL3pm8nlY03G3hlLxd6Jcia12YF0fs
+    signName: 司磊科技
+    templateCode: SMS_162475362
+    regionId: cn-hangzhou
+    domain: dysmsapi.aliyuncs.com
+    version: 2017-05-25
+    action: SendSms
