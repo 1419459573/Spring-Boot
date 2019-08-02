@@ -5,14 +5,34 @@ jdbc:
     databaseName: student
     serverName: 127.0.0.1
     username: root
-    password: 123456
+    password: rootadmin
     cachePrepStmts: true
     prepStmtsSize: 250
     prepStmtsCacheSqlLimit: 2048
     userServerPrepStmts: true
+
+
 
  # MyBatis
 mybatis:
         typeAliasesPackage: com.example.api.*.dao
         mapperLocations: classpath:/mappers/*.xml
         configLocation: classpath:/mybatis-config.xml
+spring:
+  #redis配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    lettuce:
+    pool:
+        #最大连接数
+        max-active: 8
+        #最大阻塞等待时间
+        max-wait: 6000
+        #最大空闲连接
+        max-idle: 8
+        #最小空闲连接
+        min-idle: 0
+        timeout: 5000
+    database: 0
