@@ -1,3 +1,8 @@
+# 开发环境配置
+server:
+  # 服务端口
+  port: 8888
+
 # DATASOURCE
 jdbc:
     dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
@@ -36,3 +41,5 @@ spring:
         min-idle: 0
         timeout: 5000
     database: 0
+
+appStoreList: vivo,anzhi,huawei,qh360,meizu,lianxiang,chuizi,mumayi,sanxing,oppo,yingyongbao,xiaomi,sougou,appstore,yingyongbaohai,ali
